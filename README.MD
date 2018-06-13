@@ -1,3 +1,13 @@
+
+
+基于知乎日报API的阅读应用，
+
+框架用的是react-redux。
+
+
+框架信息如下：
+
+
 # react-family
 
 [从零搭建react-family框架教程](https://github.com/brickspert/blog/issues/1)（教程会不断更新）
