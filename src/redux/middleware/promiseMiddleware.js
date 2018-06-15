@@ -1,5 +1,14 @@
 import axios from 'axios';
 
+// axios.interceptors.request.use(function (config) {
+//     config.headers['Content-Type'] = 'application/x-www-form-urlencoded';
+// })
+// 
+// 
+// axios(function(cofig) {
+//     headers['Content-Type'] = 'application/x-www-form-urlencoded';
+// })
+
 export default store => next => action => {
     const {dispatch, getState} = store;
     /*如果dispatch来的是一个function，此处不做处理，直接进入下一级*/

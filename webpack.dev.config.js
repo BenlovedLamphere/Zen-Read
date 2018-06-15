@@ -31,6 +31,10 @@ const devConfig = {
         proxy: {
             "/api/*": "http://localhost:8090/$1"
         }
+        // context: context,
+        // target: 'https://api.avatardata.cn',
+        // changeOrigin: true,
+        // secure: false
     }
 };
 
