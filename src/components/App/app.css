@@ -11,8 +11,8 @@ dl,p {
 }
 
 img {
-    display: block;
-}
+/*    display: block;
+*/}
 a{ 
 text-decoration:none; 
 color:#333; 
@@ -41,3 +41,4 @@ body {
 .mgbtm80 {
 	margin-bottom: 80px;
 }
+

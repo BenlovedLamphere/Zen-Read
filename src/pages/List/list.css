@@ -1,29 +1,137 @@
 .bigbg {
 	width: 100vw;
 	height: auto;
+	background: #eee;
 }
 .slidebox {
 	width: 100vw;
 	height: 100vw;
 	background: #000;
+	position: relative;
+	overflow: hidden;
+}
+.slidebox h1 {
+	width: 0.5rem;
+	height: 2.64rem;
+	font-size: 0.48rem;
+	font-weight: 300;
+	color: #fff;
+	position: absolute;
+	top: 1rem;
+	right: 0.48rem;
+	z-index: 99;
+}
+.slidebox .back {
+	width: 0.68rem;
+	height: 0.68rem;
+	position: absolute;
+	top: 1rem;
+	left: .48rem;
+}
+.slidebox li {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 .slidebox li img {
 	width: 100%;
 	height: 100%;
 }
 .slidebox li a {
-	display: block;
+	display: flex;
+	width: 100%;
+	height: 100%;
 	position: absolute;
-	top: 0;
+	top:0;
 	left: 0;
-	width: 100vw;
-	height: 100vw;
 	background: rgba(0,0,0,.6);
 	color: #fff;
     writing-mode: vertical-rl;/*从左向右 从zuo向you是 writing-mode: vertical-lr;*/    
     writing-mode: tb-rl;/*IE浏览器的从左向右 从zuo向you是 writing-mode: tb-lr；*/   
     font-size: 0.32rem;
-    font-weight: lighter;
-    width: 0.8rem;
-    height: 2.0rem;
+    font-weight: 300;
+	justify-content: flex-start;
+	align-items: center;
 }
+.slidebox li a span {
+	display: block;
+	width: auto;
+	height: 4.4rem;
+	letter-spacing: 0.1rem;
+	text-align: justify;
+	line-height: 0.6rem;
+	margin-top: 1rem;
+}
+.listbox {
+	display: block;
+	width: 6.36rem;
+	height: auto;
+	background: #fff;
+	margin: -1.6rem auto 1rem auto;
+	position: relative;
+	z-index: 9;
+	border-radius: 0.24rem;
+}
+.listbox li {
+	font-size: 0.32rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.2rem;
+	border-bottom: 0.02rem #eee dashed;
+}
+.listbox li img {
+	width: 1.2rem;
+	height: 1.2rem;
+	border-radius: 0.6rem;
+}
+.listbox li a {
+	width: 4.28rem;
+	height: auto;
+	font-weight: 300;
+}
+.dots {
+	display: block;
+	width: .2rem;
+	height: 2.1rem;
+	position: absolute;
+	top: 2.38rem;
+	left: .7rem;
+}
+.dots li {
+	display: block;
+	width: 0.2rem;
+	height: .2rem;
+	background: #999;
+	border-radius: .1rem;
+	position: relative;
+	margin-top: 0.3rem;
+}
+.dots .active {
+	background: #fff;
+}
+:global(.example-appear) {
+	transition: All 0.4s ease-in-out;
+	transform:translate(0, 100vw);
+}
+:global(.example-appear.example-appear-active) {
+	transform: translate(0, 0);
+}
+:global(.example-leave) {
+	transition: All 0.4s ease-in-out;
+	transform:translate(0, 0);
+}
+:global(.example-leave.example-leave-active) {
+	transform: translate(0, -100vw);
+}  
+:global(.example-enter) {
+	transition: All 0.4s ease-in-out;
+	transform:translate(0, 100vw);
+}
+:global(.example-enter.example-enter-active) {
+	transform: translate(0, 0);
+}
+
+

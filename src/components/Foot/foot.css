@@ -1,0 +1,12 @@
+.footbox {
+	width: 100%;
+	height: .4rem;
+	background: #000;
+	display: flex;
+	justify-content: center;
+}
+
+.footbox p {
+	color: #aaa;
+	font-size: 0.32rem;
+}

@@ -1,0 +1,186 @@
+.bigbg {
+	width: 100vw;
+	height: auto;
+	background: #eee;
+}
+.slidebox {
+	width: 100vw;
+	height: 100vw;
+	background: #000;
+	position: relative;
+	overflow: hidden;
+}
+.slidebox h1 {
+	width: 0.5rem;
+	height: 2.64rem;
+	font-size: 0.48rem;
+	font-weight: 300;
+	color: #fff;
+	position: absolute;
+	top: 1rem;
+	right: 0.48rem;
+	z-index: 99;
+}
+.slidebox .back {
+	width: 0.68rem;
+	height: 0.68rem;
+	position: absolute;
+	top: 1rem;
+	left: .48rem;
+}
+.slidebox li {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.slidebox li img {
+	width: 100%;
+	height: 100%;
+}
+.slidebox li p {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top:0;
+	left: 0;
+	background: rgba(0,0,0,.6);
+	color: #fff;
+    writing-mode: vertical-rl;/*从左向右 从zuo向you是 writing-mode: vertical-lr;*/    
+    writing-mode: tb-rl;/*IE浏览器的从左向右 从zuo向you是 writing-mode: tb-lr；*/   
+    font-size: 0.32rem;
+    font-weight: 300;
+	justify-content: flex-start;
+	align-items: center;
+}
+.slidebox li p span {
+	display: block;
+	width: auto;
+	height: 4.6rem;
+	letter-spacing: 0.1rem;
+	text-align: justify;
+	line-height: 0.6rem;
+	margin-top: 1rem;
+}
+.listbox {
+	display: block;
+	width: 6.36rem;
+	height: auto;
+	background: #fff;
+	margin: -1.6rem auto 1rem auto;
+	position: relative;
+	z-index: 9;
+	border-radius: 0.24rem;
+/*	min-height: 100vw;
+*/}
+.listbox .articlebox {
+	font-size: 0.32rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.2rem;
+	border-bottom: 0.02rem #eee dashed;
+	font-weight: 300;
+	text-align: justify;
+	color: #434343;
+}
+/*.listbox .articlebox img {
+	width: 1.2rem;
+	height: 1.2rem;
+	border-radius: 0.6rem;
+}*/
+/*.listbox .articlebox a {
+	width: 4.28rem;
+	height: auto;
+	font-weight: 300;
+}*/
+.source {
+	width: 0.24rem;
+	height: 3.8rem;
+	font-size: 0.24rem;
+	font-weight: 300;
+	color: #fff;
+	position: absolute;
+	top: 1.9rem;
+	left: 0.7rem;
+	z-index: 99;
+    writing-mode: vertical-rl;/*从左向右 从zuo向you是 writing-mode: vertical-lr;*/    
+    writing-mode: tb-rl;/*IE浏览器的从左向右 从zuo向you是 writing-mode: tb-lr；*/   
+    text-align: center;
+    letter-spacing: .02rem;
+}
+
+
+
+:global(.headline-background) {
+	padding:.2rem .6rem .2rem .2rem;
+	border-bottom:.04rem #eee solid;
+	color: none;
+	background: url(./img/right.png) no-repeat;
+	background-position: right center;
+}
+:global(.heading) {
+	font-size: 0.28rem;
+	color: #999;
+}
+:global(.content blockquote) {
+	border-left:.04rem #ccc solid;
+	padding:0 0.2rem;
+	background: #eee;
+	color: #777777;
+}
+:global(.answer){
+	padding:.2rem 0 ;
+	border-bottom:.04rem #eee solid;
+}
+:global(.question-title) {
+	font-size: .32rem;
+	padding:.2rem 0;
+}
+:global(.author), :global(.bio) {
+	font-size: .2rem;
+}
+:global(.meta) {
+/*	display: flex;
+	flex-direction:row;
+	justify-content: flex-start;
+	align-items: center;*/
+	margin:.2rem 0;
+}
+:global(.avatar){
+	width: .36rem;
+	border-radius: 50%;
+	margin-right: .1rem;
+	margin-bottom: -.06rem;
+}
+:global(.question p ){
+	margin:.2rem 0;
+}
+:global(.question p img) {
+	display: block;
+	margin: 0 auto;
+}
+:global(.view-more) {
+	display: none;
+}
+:global(.question ol) ,:global(.question ol li){
+	list-style-type:decimal;
+}
+:global(.question ul) ,:global(.question ul li){
+	list-style-type:disc;
+}
+:global(.question ul li){
+	width: 98%;
+	margin-left: 2%;
+}
+
+:global(.question li){
+	margin:.2rem 0;
+}
+
+
+
+
+

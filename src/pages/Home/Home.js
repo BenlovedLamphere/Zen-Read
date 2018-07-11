@@ -45,7 +45,7 @@ class Home extends Component {
                     </div>
                     <div className = {style.logonstart}>
                         <p><span>ZEN</span>read</p>
-                        <Link to = '/list'>开始</Link>
+                        <Link to = '/list/'>开始</Link>
                     </div>
                 </div>
             </div>
